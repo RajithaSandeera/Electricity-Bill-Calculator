@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="482.0" prefWidth="584.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.registerController">
+   <children>
+      <AnchorPane prefHeight="65.0" prefWidth="584.0" style="-fx-background-color: #009dff;">
+         <children>
+            <Text fill="WHITE" layoutX="130.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Registration" wrappingWidth="226.93675231933594">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="50.0" fitWidth="91.0" layoutX="64.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../register.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="78.0" layoutY="100.0" prefHeight="18.0" prefWidth="194.0" text="First Name" />
+      <TextField fx:id="fname" layoutX="78.0" layoutY="118.0" prefHeight="30.0" prefWidth="406.0" />
+      <Label layoutX="78.0" layoutY="161.0" prefHeight="18.0" prefWidth="194.0" text="Last Name" />
+      <Label layoutX="78.0" layoutY="222.0" prefHeight="18.0" prefWidth="194.0" text="User Name" />
+      <TextField fx:id="lname" layoutX="78.0" layoutY="179.0" prefHeight="30.0" prefWidth="406.0" />
+      <TextField fx:id="username" layoutX="78.0" layoutY="240.0" prefHeight="30.0" prefWidth="406.0" />
+      <Label layoutX="78.0" layoutY="288.0" prefHeight="18.0" prefWidth="194.0" text="Password" />
+      <Label layoutX="78.0" layoutY="351.0" prefHeight="18.0" prefWidth="194.0" text="Confirm Password" />
+      <Button fx:id="registerbutton" layoutX="168.0" layoutY="419.0" mnemonicParsing="false" onAction="#pressRegisterButton" prefHeight="37.0" prefWidth="208.0" style="-fx-background-color: #009dff;" text="Register" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="rpassword" layoutX="78.0" layoutY="306.0" prefHeight="30.0" prefWidth="406.0" />
+      <PasswordField fx:id="cpassword" layoutX="78.0" layoutY="369.0" prefHeight="30.0" prefWidth="406.0" />
+   </children>
+</AnchorPane>
